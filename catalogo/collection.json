@@ -1,10 +1,10 @@
 {
   "type": "Collection",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "id": "oefa-antapaccay",
   "title": "OEFA · Antapaccay 2022",
   "description": "Expedientes de fiscalización ambiental convertidos a tablas auditables.",
-  "license": "proprietary",
+  "license": "other",
   "extent": {
     "spatial": {
       "bbox": [
@@ -28,11 +28,13 @@
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json"
+      "href": "../catalog.json",
+      "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "../catalog.json"
+      "href": "../catalog.json",
+      "type": "application/json"
     },
     {
       "rel": "self",
@@ -40,7 +42,66 @@
     },
     {
       "rel": "item",
-      "href": "./item.json"
+      "href": "./item.json",
+      "type": "application/geo+json",
+      "title": "Expediente OEFA 2022 · Antapaccay"
+    },
+    {
+      "rel": "agents",
+      "href": "./AGENTS.md",
+      "type": "text/markdown",
+      "title": "Guia para agentes"
+    },
+    {
+      "rel": "describedby",
+      "href": "./README.md",
+      "type": "text/markdown",
+      "title": "Documentacion"
+    },
+    {
+      "rel": "license",
+      "href": "../LEEME.md",
+      "type": "text/markdown",
+      "title": "Terminos de uso"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.oefa.gob.pe",
+      "type": "text/html",
+      "title": "Origen: OEFA"
     }
-  ]
+  ],
+  "stac_extensions": [
+    "https://schemas.portolan-sdi.org/portolan/v0.2.0/schema.json"
+  ],
+  "providers": [
+    {
+      "name": "OEFA",
+      "roles": [
+        "producer"
+      ],
+      "url": "https://www.oefa.gob.pe"
+    },
+    {
+      "name": "Kipu360",
+      "roles": [
+        "processor",
+        "host"
+      ],
+      "url": "https://kipu360.github.io"
+    }
+  ],
+  "assets": {
+    "thumbnail": {
+      "href": "./thumbnail.png",
+      "type": "image/png",
+      "roles": [
+        "thumbnail"
+      ],
+      "title": "Cobertura de estaciones del expediente",
+      "file:size": 307808,
+      "file:checksum": "122018acdac129f88737e3c0a574eb871d5b81ddb6e39224290b1539fd4788a1b4c1"
+    }
+  },
+  "updated": "2026-11-08T18:09:31Z"
 }

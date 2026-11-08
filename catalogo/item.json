@@ -1,8 +1,9 @@
 {
   "type": "Feature",
-  "stac_version": "1.0.0",
+  "stac_version": "1.1.0",
   "stac_extensions": [
-    "https://stac-extensions.github.io/file/v2.1.0/schema.json"
+    "https://stac-extensions.github.io/file/v2.1.0/schema.json",
+    "https://stac-extensions.github.io/version/v1.2.0/schema.json"
   ],
   "id": "oefa-antapaccay-2022.1",
   "properties": {
@@ -13,7 +14,7 @@
     "end_datetime": "2022-11-05T23:59:59Z",
     "version": "2022.1",
     "created": "2026-11-07T23:58:17Z",
-    "license": "proprietary",
+    "license": "other",
     "providers": [
       {
         "name": "OEFA"
@@ -63,15 +64,18 @@
   "links": [
     {
       "rel": "root",
-      "href": "../catalog.json"
+      "href": "../catalog.json",
+      "type": "application/json"
     },
     {
       "rel": "parent",
-      "href": "../catalog.json"
+      "href": "./collection.json",
+      "type": "application/json"
     },
     {
       "rel": "collection",
-      "href": "./collection.json"
+      "href": "./collection.json",
+      "type": "application/json"
     },
     {
       "rel": "self",
@@ -86,7 +90,8 @@
         "data"
       ],
       "file:size": 19354,
-      "checksum:multihash": "12206827b090153f1ab21fd49c3f25b6a9f779ef25da58c1e181413f5820d509275b"
+      "checksum:multihash": "12206827b090153f1ab21fd49c3f25b6a9f779ef25da58c1e181413f5820d509275b",
+      "file:checksum": "12206827b090153f1ab21fd49c3f25b6a9f779ef25da58c1e181413f5820d509275b"
     },
     "campaigns": {
       "href": "../tablas/campaigns.parquet",
@@ -95,7 +100,8 @@
         "data"
       ],
       "file:size": 5224,
-      "checksum:multihash": "122063bfb838a00ef894265c9f092c3357d6bb3a108f9da8f61e4a5e9d81ca5383c8"
+      "checksum:multihash": "122063bfb838a00ef894265c9f092c3357d6bb3a108f9da8f61e4a5e9d81ca5383c8",
+      "file:checksum": "122063bfb838a00ef894265c9f092c3357d6bb3a108f9da8f61e4a5e9d81ca5383c8"
     },
     "corrections": {
       "href": "../tablas/corrections.parquet",
@@ -104,7 +110,8 @@
         "data"
       ],
       "file:size": 6682,
-      "checksum:multihash": "1220170c6bb1d5a438e137473c049afebeaf57aa103208d9fb1c2df844c29449dc15"
+      "checksum:multihash": "1220170c6bb1d5a438e137473c049afebeaf57aa103208d9fb1c2df844c29449dc15",
+      "file:checksum": "1220170c6bb1d5a438e137473c049afebeaf57aa103208d9fb1c2df844c29449dc15"
     },
     "parameters": {
       "href": "../tablas/parameters.parquet",
@@ -113,7 +120,8 @@
         "data"
       ],
       "file:size": 8025,
-      "checksum:multihash": "1220c55864b3775fb3a281a1843b511cb8a65404a0f6a7f410cb7f257839510ed53e"
+      "checksum:multihash": "1220c55864b3775fb3a281a1843b511cb8a65404a0f6a7f410cb7f257839510ed53e",
+      "file:checksum": "1220c55864b3775fb3a281a1843b511cb8a65404a0f6a7f410cb7f257839510ed53e"
     },
     "quality_issues": {
       "href": "../tablas/quality_issues.parquet",
@@ -122,7 +130,8 @@
         "data"
       ],
       "file:size": 7244,
-      "checksum:multihash": "12209b317cf9cb118559c8702deeae472f80e76bb906d4cb92a4e90ed6c7e4230dd3"
+      "checksum:multihash": "12209b317cf9cb118559c8702deeae472f80e76bb906d4cb92a4e90ed6c7e4230dd3",
+      "file:checksum": "12209b317cf9cb118559c8702deeae472f80e76bb906d4cb92a4e90ed6c7e4230dd3"
     },
     "results": {
       "href": "../tablas/results.parquet",
@@ -131,7 +140,8 @@
         "data"
       ],
       "file:size": 524873,
-      "checksum:multihash": "12205eeee59e565a8f4f2a919998f86e0e49a63e8456782f4bead55afb113a6fd0a4"
+      "checksum:multihash": "12205eeee59e565a8f4f2a919998f86e0e49a63e8456782f4bead55afb113a6fd0a4",
+      "file:checksum": "12205eeee59e565a8f4f2a919998f86e0e49a63e8456782f4bead55afb113a6fd0a4"
     },
     "samples": {
       "href": "../tablas/samples.parquet",
@@ -140,7 +150,8 @@
         "data"
       ],
       "file:size": 19194,
-      "checksum:multihash": "122090d54549bcace070df3889b860b66840d4c61b6a0488f1ce689e002f5997ba69"
+      "checksum:multihash": "122090d54549bcace070df3889b860b66840d4c61b6a0488f1ce689e002f5997ba69",
+      "file:checksum": "122090d54549bcace070df3889b860b66840d4c61b6a0488f1ce689e002f5997ba69"
     },
     "sampling_events": {
       "href": "../tablas/sampling_events.parquet",
@@ -149,7 +160,8 @@
         "data"
       ],
       "file:size": 25002,
-      "checksum:multihash": "12200833aca8e7b72443a2777b1cf42159109998c01faeb03e0e5b97d7d80545400f"
+      "checksum:multihash": "12200833aca8e7b72443a2777b1cf42159109998c01faeb03e0e5b97d7d80545400f",
+      "file:checksum": "12200833aca8e7b72443a2777b1cf42159109998c01faeb03e0e5b97d7d80545400f"
     },
     "source_files": {
       "href": "../tablas/source_files.parquet",
@@ -158,7 +170,8 @@
         "data"
       ],
       "file:size": 4140,
-      "checksum:multihash": "1220cdc468dc5b957b7d581d115dd2a7d4f0861be9af6af51027614f84e342c18b41"
+      "checksum:multihash": "1220cdc468dc5b957b7d581d115dd2a7d4f0861be9af6af51027614f84e342c18b41",
+      "file:checksum": "1220cdc468dc5b957b7d581d115dd2a7d4f0861be9af6af51027614f84e342c18b41"
     },
     "source_records": {
       "href": "../tablas/source_records.parquet",
@@ -167,7 +180,8 @@
         "data"
       ],
       "file:size": 15058,
-      "checksum:multihash": "1220b6156b62c528219cb6164bc776f310a022ccfd77f7fffd1b84d847c8c08c0ae0"
+      "checksum:multihash": "1220b6156b62c528219cb6164bc776f310a022ccfd77f7fffd1b84d847c8c08c0ae0",
+      "file:checksum": "1220b6156b62c528219cb6164bc776f310a022ccfd77f7fffd1b84d847c8c08c0ae0"
     },
     "station_aliases": {
       "href": "../tablas/station_aliases.parquet",
@@ -176,7 +190,8 @@
         "data"
       ],
       "file:size": 26003,
-      "checksum:multihash": "12208bd67672f64d92971e7f77dbbec133ae4a83df7e5c2a15612755fb5aacad06bf"
+      "checksum:multihash": "12208bd67672f64d92971e7f77dbbec133ae4a83df7e5c2a15612755fb5aacad06bf",
+      "file:checksum": "12208bd67672f64d92971e7f77dbbec133ae4a83df7e5c2a15612755fb5aacad06bf"
     },
     "stations": {
       "href": "../tablas/stations.parquet",
@@ -185,7 +200,8 @@
         "data"
       ],
       "file:size": 38208,
-      "checksum:multihash": "12206cb0231961a907948ef6f71e4511b147f981e88c8890d5115378c3b455fdc4c3"
+      "checksum:multihash": "12206cb0231961a907948ef6f71e4511b147f981e88c8890d5115378c3b455fdc4c3",
+      "file:checksum": "12206cb0231961a907948ef6f71e4511b147f981e88c8890d5115378c3b455fdc4c3"
     },
     "stations_geojson": {
       "href": "../docs/stations.geojson",
@@ -194,7 +210,8 @@
         "visual"
       ],
       "file:size": 105671,
-      "checksum:multihash": "122052a67a21e7de78e048070e210153caffbf471d35ffb815b5b5f5cf8e1ef75dbe"
+      "checksum:multihash": "122052a67a21e7de78e048070e210153caffbf471d35ffb815b5b5f5cf8e1ef75dbe",
+      "file:checksum": "122052a67a21e7de78e048070e210153caffbf471d35ffb815b5b5f5cf8e1ef75dbe"
     },
     "archivos": {
       "href": "../archivos.parquet",
@@ -203,7 +220,8 @@
         "metadata"
       ],
       "file:size": 43399,
-      "checksum:multihash": "12202d24256a49ea9ac9cdd1fa4d4ba525493cad50c129d7ac27fcb726dcb005f564"
+      "checksum:multihash": "12202d24256a49ea9ac9cdd1fa4d4ba525493cad50c129d7ac27fcb726dcb005f564",
+      "file:checksum": "12202d24256a49ea9ac9cdd1fa4d4ba525493cad50c129d7ac27fcb726dcb005f564"
     },
     "documentos": {
       "href": "../documentos.parquet",
@@ -212,7 +230,8 @@
         "metadata"
       ],
       "file:size": 24344,
-      "checksum:multihash": "1220cfdf9a446068dbc6cb07fa4fd0076639b93dedabc3520214903fff27c191db92"
+      "checksum:multihash": "1220cfdf9a446068dbc6cb07fa4fd0076639b93dedabc3520214903fff27c191db92",
+      "file:checksum": "1220cfdf9a446068dbc6cb07fa4fd0076639b93dedabc3520214903fff27c191db92"
     },
     "imagenes": {
       "href": "../imagenes.parquet",
@@ -221,7 +240,8 @@
         "metadata"
       ],
       "file:size": 107944,
-      "checksum:multihash": "12209a988611a03fc61e4e9e3a31e39d479e30faccdc629185d3b4c43241dde68b68"
+      "checksum:multihash": "12209a988611a03fc61e4e9e3a31e39d479e30faccdc629185d3b4c43241dde68b68",
+      "file:checksum": "12209a988611a03fc61e4e9e3a31e39d479e30faccdc629185d3b4c43241dde68b68"
     },
     "cola_revision": {
       "href": "../revision/cola.csv",
@@ -230,7 +250,8 @@
         "metadata"
       ],
       "file:size": 10205,
-      "checksum:multihash": "1220acc4a41eb9446717d413cfc0cffe2f5510c1eb33f937e4001244a0843a093a2b"
+      "checksum:multihash": "1220acc4a41eb9446717d413cfc0cffe2f5510c1eb33f937e4001244a0843a093a2b",
+      "file:checksum": "1220acc4a41eb9446717d413cfc0cffe2f5510c1eb33f937e4001244a0843a093a2b"
     },
     "leeme": {
       "href": "../LEEME.md",
@@ -239,7 +260,8 @@
         "metadata"
       ],
       "file:size": 3463,
-      "checksum:multihash": "1220bda1a2424b7bef90d32e0e5497d4d316b21588c1a9a74415bf31c56f628fdb94"
+      "checksum:multihash": "1220bda1a2424b7bef90d32e0e5497d4d316b21588c1a9a74415bf31c56f628fdb94",
+      "file:checksum": "1220bda1a2424b7bef90d32e0e5497d4d316b21588c1a9a74415bf31c56f628fdb94"
     }
   },
   "collection": "oefa-antapaccay"
