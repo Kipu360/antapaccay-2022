@@ -14,7 +14,13 @@
   body{margin:0;background:var(--crema);color:var(--tinta);font-family:"Manrope",system-ui,-apple-system,sans-serif}
   a{color:var(--tierra)}
   code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
-  header{padding:22px 28px 16px;border-bottom:1px solid var(--linea);display:flex;gap:18px;align-items:flex-end;flex-wrap:wrap}
+  header{padding:18px 28px 16px;border-bottom:1px solid var(--linea);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .logo{height:38px;width:auto}
+  .cab{display:flex;flex-direction:column;gap:2px}
+  #ficha{border:1px solid var(--tierra);border-radius:12px;background:#fff;padding:14px;margin-top:14px}
+  #ficha h2{color:var(--tierra);margin-bottom:6px}
+  #ficha .cod{font-size:17px;font-weight:700;letter-spacing:-.2px}
+  #ficha table{margin-top:8px}
   h1{margin:0;font-size:24px;letter-spacing:-.2px}
   .sub{color:var(--pizarra);font-size:13px}
   .chip{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
@@ -59,7 +65,8 @@
 </head>
 <body>
 <header>
-  <div>
+  <img class="logo" src="assets/logo.svg" alt="Kipu360">
+  <div class="cab">
     <h1>Expediente Antapaccay 2022</h1>
     <div class="sub">OEFA-DEAM-STEC · 266 archivos · 104 PDF · 7.732 páginas ordenadas en 12 tablas</div>
   </div>
@@ -98,6 +105,11 @@
         <div class="row">
           <button id="btn-reset">Reiniciar</button>
         </div>
+      </div>
+
+      <div id="ficha">
+        <h2>Estación</h2>
+        <div id="ficha-cuerpo" class="sub">Tocá un punto del mapa.</div>
       </div>
 
       <details class="panel" style="margin-top:14px">
@@ -275,6 +287,36 @@ function color(d){
   return "#8B96A0";
 }
 
+async function fichaEstacion(id){
+  if (!id) return;
+  const cab = (await conn.query(`
+    SELECT canonical_code, matriz, lat, lon, elevation_m, coordinate_status
+    FROM read_parquet('stations.parquet') WHERE station_id = '${String(id).replace(/'/g,"''")}'
+  `)).toArray()[0];
+  const tot = (await conn.query(`
+    SELECT count(*) n, count(numeric_value) num,
+           count(CASE WHEN qualifier IN ('LESS_THAN','NOT_DETECTED','GREATER_THAN') THEN 1 END) cen,
+           min(sampling_date) desde, max(sampling_date) hasta
+    FROM obs WHERE station_id = '${String(id).replace(/'/g,"''")}'
+  `)).toArray()[0];
+  const params = (await conn.query(`
+    SELECT parameter_name nom, count(*) n, count(numeric_value) num, round(avg(numeric_value), 3) prom, any_value(unidad) u
+    FROM obs WHERE station_id = '${String(id).replace(/'/g,"''")}'
+    GROUP BY 1 ORDER BY n DESC LIMIT 8
+  `)).toArray();
+
+  const f = v => v == null ? "—" : String(v).slice(0,10);
+  $("ficha-cuerpo").innerHTML = `
+    <div class="cod">${cab.canonical_code}</div>
+    <div class="sub" style="margin-bottom:8px">${cab.matriz} · ${Number(cab.lat).toFixed(4)}, ${Number(cab.lon).toFixed(4)} · ${Math.round(Number(cab.elevation_m || 0))} m</div>
+    <div class="sub"><b>${fmt(Number(tot.n))}</b> resultados · <b>${fmt(Number(tot.num))}</b> con valor · <b>${fmt(Number(tot.cen))}</b> bajo el límite</div>
+    <div class="sub">muestreo: ${f(tot.desde)} a ${f(tot.hasta)}</div>
+    <table><thead><tr><th>Parámetro</th><th class="num">n</th><th class="num">prom.</th></tr></thead><tbody>
+    ${params.map(r => `<tr><td>${r.nom}</td><td class="num">${fmt(Number(r.n))}</td>
+      <td class="num">${r.prom == null ? "—" : Number(r.prom)}${r.u ? " " + r.u : ""}</td></tr>`).join("")}
+    </tbody></table>`;
+}
+
 async function pintar(){
   const mat = $("f-mat").value;
   const par = $("f-par").value;
@@ -308,7 +350,7 @@ async function pintar(){
       type: "Feature",
       geometry: { type: "Point", coordinates: [Number(f.lon), Number(f.lat)] },
       properties: {
-        codigo: f.codigo, matriz: f.matriz,
+        station_id: f.station_id, codigo: f.codigo, matriz: f.matriz,
         n_num: Number(f.n_num), n_cen: Number(f.n_cen), n_tot: Number(f.n_tot),
         prom: f.prom == null ? null : Number(f.prom),
         ultima: f.ultima ? String(f.ultima).slice(0,10) : null
@@ -328,19 +370,7 @@ async function pintar(){
         [">",["get","n_num"],0],"#B45638",
         [">",["get","n_tot"],0],"#C9BFAE","#8B96A0"],
       "circle-stroke-width":1.2,"circle-stroke-color":"#F7F7F1" }});
-    mapa.on("click","est-pt", e => {
-      const p = e.features[0].properties;
-      const f = e.features[0];
-      new maplibregl.Popup({closeButton:true, maxWidth:"260px"})
-        .setLngLat(f.geometry.coordinates)
-        .setHTML(`<div style="font-family:Manrope,system-ui,sans-serif;color:#12343A">
-          <div style="font-weight:700;font-size:14px">${p.codigo}</div>
-          <div style="font-size:12px;color:#526B70;margin:2px 0 6px">${p.matriz}</div>
-          <div style="font-size:12px"><b>${p.n_num}</b> con valor · <b>${p.n_cen}</b> bajo el límite</div>
-          <div style="font-size:12px;color:#526B70">último muestreo: ${p.ultima || "sin fecha"}</div>
-        </div>`)
-        .addTo(mapa);
-    });
+    mapa.on("click","est-pt", e => fichaEstacion(e.features[0].properties.station_id));
     mapa.on("mouseenter","est-pt",()=>document.body.style.cursor="pointer");
     mapa.on("mouseleave","est-pt",()=>document.body.style.cursor="");
     datosCapa = true;
