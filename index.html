@@ -198,8 +198,9 @@ async function cargar(){
   for (const k of querer){
     paso(`bajando ${k}.parquet…`);
     const buf = new Uint8Array(await (await fetch(rutas[k])).arrayBuffer());
+    const kb = (buf.byteLength / 1024).toFixed(0);
     await db.registerFileBuffer(k + ".parquet", buf);
-    paso(`&nbsp;&nbsp;&nbsp;<span class="mono">${k}.parquet</span> ${(buf.byteLength/1024).toFixed(0)} KB`);
+    paso(`&nbsp;&nbsp;&nbsp;<span class="mono">${k}.parquet</span> ${kb} KB`);
   }
   paso(`<b>3.</b> registrados en DuckDB-Wasm · <span class="ok">${((performance.now()-t0)/1000).toFixed(1)} s</span>`);
 
