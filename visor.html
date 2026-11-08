@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kipu360 · Expediente Antapaccay 2022</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+<style>
+  :root{
+    --tinta:#12343A; --tierra:#B45638; --crema:#F7F7F1; --niebla:#E9EEEB;
+    --pizarra:#526B70; --tierra_clara:#F2DFD6; --linea:#D5DEDA;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--crema);color:var(--tinta);font-family:"Manrope",system-ui,-apple-system,sans-serif}
+  a{color:var(--tierra)}
+  code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px}
+  header{padding:18px 28px 16px;border-bottom:1px solid var(--linea);display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .logo{height:38px;width:auto}
+  .cab{display:flex;flex-direction:column;gap:2px}
+  #ficha{border:1px solid var(--tierra);border-radius:12px;background:#fff;padding:14px;margin-top:14px}
+  #ficha h2{color:var(--tierra);margin-bottom:6px}
+  #ficha .cod{font-size:17px;font-weight:700;letter-spacing:-.2px}
+  #ficha table{margin-top:8px}
+  h1{margin:0;font-size:24px;letter-spacing:-.2px}
+  .sub{color:var(--pizarra);font-size:13px}
+  .chip{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+  .tag{border:1px solid var(--tinta);border-radius:999px;padding:4px 11px;font-size:11.5px;letter-spacing:.02em}
+  .tag.on{background:var(--tinta);color:var(--crema)}
+  .tag.stac{background:var(--tierra_clara);border-color:var(--tierra);color:#8C2F1F}
+  main{padding:18px 28px 40px}
+  .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:14px}
+  .kpi{background:#fff;border:1px solid var(--linea);border-radius:12px;padding:12px 14px}
+  .kpi .n{font-size:22px;font-weight:700;letter-spacing:-.3px}
+  .kpi .l{font-size:11.5px;color:var(--pizarra);text-transform:uppercase;letter-spacing:.05em}
+  .grid{display:grid;grid-template-columns:330px 1fr;gap:14px;align-items:start}
+  .panel{background:#fff;border:1px solid var(--linea);border-radius:12px;padding:14px}
+  .panel h2{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--pizarra)}
+  label{display:block;font-size:12px;color:var(--pizarra);margin:10px 0 4px}
+  select,button{width:100%;padding:8px;border:1px solid var(--linea);border-radius:8px;background:var(--crema);color:var(--tinta);font:inherit;font-size:13px}
+  button{cursor:pointer}
+  button:hover{border-color:var(--tinta)}
+  .row{display:flex;gap:8px;margin-top:10px}
+  .row button{flex:1}
+  #map{height:520px;border-radius:12px;border:1px solid var(--linea)}
+  .leyenda{display:flex;gap:10px;align-items:center;font-size:11.5px;color:var(--pizarra);margin-top:8px;flex-wrap:wrap}
+  .sw{width:14px;height:14px;border-radius:4px;display:inline-block;vertical-align:-2px;margin-right:4px}
+  .traza{margin-top:12px;font-size:11.5px;color:var(--pizarra);line-height:1.7}
+  .traza b{color:var(--tinta)}
+  .traza .ok{color:#2E6B4F}
+  pre{margin:8px 0 0;background:var(--niebla);border-radius:8px;padding:10px;overflow:auto;font-size:11px;line-height:1.6;color:#22383C;white-space:pre-wrap;word-break:break-word}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:6px}
+  th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--pizarra);border-bottom:1px solid var(--linea);padding:6px 6px}
+  td{padding:5px 6px;border-bottom:1px solid #EFF3F1}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .dos{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+  .barra{display:flex;align-items:center;gap:8px;margin:6px 0}
+  .barra .nom{width:170px;font-size:12px}
+  .barra .pista{flex:1;background:var(--niebla);border-radius:5px;height:16px;position:relative;overflow:hidden}
+  .barra .relleno{position:absolute;left:0;top:0;bottom:0;background:var(--tierra);opacity:.85}
+  .barra .pc{width:54px;text-align:right;font-size:11.5px;color:var(--pizarra)}
+  #aviso{background:var(--tierra_clara);border:1px solid #E0BCAC;color:#8C2F1F;border-radius:10px;padding:10px 12px;font-size:12.5px;margin-bottom:14px;display:none}
+  .pie{margin-top:22px;font-size:11.5px;color:var(--pizarra)}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}.dos{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <img class="logo" src="assets/logo.svg" alt="Kipu360">
+  <div class="cab">
+    <h1>Expediente Antapaccay 2022</h1>
+    <div class="sub">OEFA-DEAM-STEC · 266 archivos · 104 PDF · 7.732 páginas ordenadas en 12 tablas</div>
+  </div>
+  <div class="chip">
+    <span class="tag stac" id="chip-stac">leyendo catálogo STAC</span>
+    <span class="tag" id="chip-item">item: s/d</span>
+    <a class="tag" href="index.html" style="text-decoration:none">Volver al catálogo</a>
+  </div>
+</header>
+
+<main>
+  <div id="aviso"></div>
+
+  <div class="kpis">
+    <div class="kpi"><div class="n" id="k-est">s/d</div><div class="l">estaciones</div></div>
+    <div class="kpi"><div class="n" id="k-res">s/d</div><div class="l">resultados</div></div>
+    <div class="kpi"><div class="n" id="k-par">s/d</div><div class="l">parámetros</div></div>
+    <div class="kpi"><div class="n" id="k-mat">s/d</div><div class="l">matrices</div></div>
+    <div class="kpi"><div class="n" id="k-cen">s/d</div><div class="l">bajo el límite</div></div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="panel">
+        <h2>Qué mirar</h2>
+        <label for="f-mat">Matriz</label>
+        <select id="f-mat"></select>
+        <label for="f-par">Parámetro</label>
+        <select id="f-par"></select>
+        <label for="f-cal">Calidad del dato</label>
+        <select id="f-cal">
+          <option value="">Todo</option>
+          <option value="VALID">Solo válidos (revisados)</option>
+          <option value="CENS">Solo bajo el límite</option>
+          <option value="PENDING_REVIEW">Solo en revisión (sin fecha)</option>
+        </select>
+        <div class="row">
+          <button id="btn-reset">Reiniciar</button>
+        </div>
+      </div>
+
+      <div id="ficha">
+        <h2>Estación</h2>
+        <div id="ficha-cuerpo" class="sub">Tocá un punto del mapa.</div>
+      </div>
+
+      <details class="panel" style="margin-top:14px">
+        <summary style="cursor:pointer;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--pizarra)">Cómo se carga esto (técnico)</summary>
+        <div class="traza" id="traza" style="margin-top:10px">leyendo el catálogo…</div>
+        <pre id="sql"></pre>
+      </details>
+    </div>
+
+    <div>
+      <div id="map"></div>
+      <div class="leyenda">
+        <span><i class="sw" style="background:#B45638"></i>con dato</span>
+        <span><i class="sw" style="background:#B39B7E"></i>solo bajo el límite</span>
+        <span><i class="sw" style="background:#6B7885"></i>sin dato en la selección</span>
+        <span style="margin-left:auto" id="leyenda-detalle"></span>
+      </div>
+
+      <div class="dos">
+        <div class="panel">
+          <h2>Resumen de la selección</h2>
+          <div id="resumen" class="sub">s/d</div>
+          <table id="tabla-res"><thead></thead><tbody></tbody></table>
+        </div>
+        <div class="panel">
+          <h2>Cuánto dato está bajo el límite de detección</h2>
+          <div id="censura" class="sub">s/d</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pie">
+    Release <b id="pie-rel">s/d</b> · licencia <b id="pie-lic">s/d</b> · los valores bajo el límite se conservan con su signo y su límite, no se estiman ·
+    <a href="revision/revisar.html">cola de revisión (65 items)</a> · <a href="catalogo/item.json">item.json</a>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+<script type="module">
+import * as duckdb from "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.32.0/+esm";
+
+const $ = id => document.getElementById(id);
+const fmt = n => n == null ? "s/d" : new Intl.NumberFormat("es-PE").format(n);
+
+let conn, db, item, seleccion = [], mapa, datosCapa = null;
+const pasos = [];
+function paso(txt){
+  pasos.push(txt);
+  const el = $("traza");
+  if (el) el.innerHTML = pasos.join("<br>");
+}
+
+function aviso(txt){
+  const a = $("aviso");
+  if (!txt) { a.style.display = "none"; return; }
+  a.textContent = txt; a.style.display = "block";
+}
+
+async function cargar(){
+  const t0 = performance.now();
+  paso("abriendo el catálogo…");
+
+  // 1. el catálogo
+  const itemUrl = new URL("catalogo/item.json", location.href);
+  const itemRes = await fetch(itemUrl);
+  if (!itemRes.ok) throw new Error("no se pudo leer catalogo/item.json (" + itemRes.status + ")");
+  item = await itemRes.json();
+  $("chip-item").textContent = "item: " + item.id;
+  paso(`<b>1.</b> item.json leído · <span class="ok">${item.id}</span>`);
+
+  // 2. las rutas salen de los assets
+  const assets = Object.entries(item.assets || {});
+  paso(`<b>2.</b> assets en el ítem: <b>${assets.length}</b>`);
+
+  const querer = ["results","stations","sampling_events","parameters","samples"];
+  const rutas = {};
+  for (const [k, v] of assets){
+    if (querer.includes(k)){
+      rutas[k] = new URL(v.href, itemUrl).href;
+      paso(`&nbsp;&nbsp;&nbsp;<span class="mono">${k}</span> → <span class="mono">${v.href}</span>`);
+    }
+  }
+  const faltan = querer.filter(k => !rutas[k]);
+  if (faltan.length) throw new Error("el ítem no declara: " + faltan.join(", "));
+
+  // 3. duckdb en el navegador
+  paso("arrancando DuckDB-Wasm…");
+  const CDN = "https://cdn.jsdelivr.net/npm/@duckdb/duckdb-wasm@1.32.0/dist/";
+  const mainWorker = CDN + "duckdb-browser-mvp.worker.js";
+  const mainModule = CDN + "duckdb-mvp.wasm";
+  const workerUrl = URL.createObjectURL(new Blob([`importScripts("${mainWorker}");`], {type:"text/javascript"}));
+  db = new duckdb.AsyncDuckDB(new duckdb.VoidLogger(), new Worker(workerUrl));
+  await db.instantiate(mainModule, null);
+  URL.revokeObjectURL(workerUrl);
+  conn = await db.connect();
+
+  for (const k of querer){
+    paso(`bajando ${k}.parquet…`);
+    const buf = new Uint8Array(await (await fetch(rutas[k])).arrayBuffer());
+    const kb = (buf.byteLength / 1024).toFixed(0);
+    await db.registerFileBuffer(k + ".parquet", buf);
+    paso(`&nbsp;&nbsp;&nbsp;<span class="mono">${k}.parquet</span> ${kb} KB`);
+  }
+  paso(`<b>3.</b> registrados en DuckDB-Wasm · <span class="ok">${((performance.now()-t0)/1000).toFixed(1)} s</span>`);
+
+  await conn.query(`
+    CREATE OR REPLACE VIEW obs AS
+    SELECT r.result_id, r.parameter_code, p.parameter_name,
+           r.numeric_value, r.reported_value, r.qualifier, r.reported_limit,
+           r.canonical_unit AS unidad, r.quality_status,
+           r.evidence_sheet, r.evidence_row,
+           st.station_id, st.canonical_code AS codigo, st.lon, st.lat, st.matriz,
+           e.sampling_date
+    FROM read_parquet('results.parquet') r
+    JOIN read_parquet('parameters.parquet') p USING (parameter_code)
+    JOIN read_parquet('stations.parquet') st USING (station_id)
+    LEFT JOIN read_parquet('samples.parquet') s USING (sample_id)
+    LEFT JOIN read_parquet('sampling_events.parquet') e USING (sampling_event_id)
+  `);
+
+  const kpis = (await conn.query(`
+    SELECT (SELECT count(*) FROM read_parquet('stations.parquet')) est,
+           (SELECT count(*) FROM read_parquet('results.parquet')) res,
+           (SELECT count(*) FROM read_parquet('parameters.parquet')) par,
+           (SELECT count(DISTINCT matriz) FROM read_parquet('stations.parquet')) mat,
+           (SELECT count(*) FROM read_parquet('results.parquet') WHERE qualifier IN ('LESS_THAN','NOT_DETECTED','GREATER_THAN')) cen
+  `)).toArray()[0];
+  $("k-est").textContent = fmt(Number(kpis.est));
+  $("k-res").textContent = fmt(Number(kpis.res));
+  $("k-par").textContent = fmt(Number(kpis.par));
+  $("k-mat").textContent = fmt(Number(kpis.mat));
+  $("k-cen").textContent = fmt(Number(kpis.cen));
+  $("pie-rel").textContent = item.id;
+  $("pie-lic").textContent = "proprietary (privado)";
+
+  $("chip-stac").textContent = "catálogo STAC leído";
+  $("chip-stac").classList.add("on");
+  $("sql").textContent =
+`SELECT st.canonical_code, avg(r.numeric_value)
+FROM read_parquet('results.parquet') r
+JOIN read_parquet('stations.parquet') st USING (station_id)
+WHERE r.numeric_value IS NOT NULL
+GROUP BY 1`;
+
+  const mats = (await conn.query(`SELECT matriz, count(*) n FROM read_parquet('stations.parquet') GROUP BY 1 ORDER BY n DESC`)).toArray();
+  $("f-mat").innerHTML = `<option value="">Todas (${fmt(Number(kpis.est))})</option>` +
+    mats.map(m => `<option value="${m.matriz}">${m.matriz} (${fmt(Number(m.n))})</option>`).join("");
+
+  await llenarParametros("");
+  const mejor = (await conn.query(`
+    SELECT parameter_code FROM read_parquet('results.parquet')
+    WHERE numeric_value IS NOT NULL GROUP BY 1 ORDER BY count(*) DESC LIMIT 1
+  `)).toArray()[0];
+  if (mejor) { $("f-par").value = mejor.parameter_code; }
+  await pintar();
+}
+
+async function llenarParametros(matriz){
+  const filas = (await conn.query(`
+    SELECT o.parameter_code, o.parameter_name, count(*) n
+    FROM obs o
+    ${matriz ? `WHERE o.matriz = '${matriz.replace(/'/g,"''")}'` : ""}
+    GROUP BY 1,2
+    ORDER BY count(CASE WHEN o.numeric_value IS NOT NULL THEN 1 END) DESC, n DESC
+  `)).toArray();
+  const actual = $("f-par").value;
+  $("f-par").innerHTML = filas.map(f =>
+    `<option value="${f.parameter_code}" ${f.parameter_code===actual?"selected":""}>${f.parameter_name} (${fmt(Number(f.n))})</option>`).join("");
+}
+
+function color(d){
+  if (d.n_num > 0) return "#B45638";
+  if (d.n_tot > 0) return "#C9BFAE";
+  return "#8B96A0";
+}
+
+async function fichaEstacion(id){
+  if (!id) return;
+  const cab = (await conn.query(`
+    SELECT canonical_code, matriz, lat, lon, elevation_m, coordinate_status
+    FROM read_parquet('stations.parquet') WHERE station_id = '${String(id).replace(/'/g,"''")}'
+  `)).toArray()[0];
+  const tot = (await conn.query(`
+    SELECT count(*) n, count(numeric_value) num,
+           count(CASE WHEN qualifier IN ('LESS_THAN','NOT_DETECTED','GREATER_THAN') THEN 1 END) cen,
+           min(sampling_date) desde, max(sampling_date) hasta
+    FROM obs WHERE station_id = '${String(id).replace(/'/g,"''")}'
+  `)).toArray()[0];
+  const params = (await conn.query(`
+    SELECT parameter_name nom, count(*) n, count(numeric_value) num, round(avg(numeric_value), 3) prom, any_value(unidad) u
+    FROM obs WHERE station_id = '${String(id).replace(/'/g,"''")}'
+    GROUP BY 1 ORDER BY n DESC LIMIT 8
+  `)).toArray();
+
+  const f = v => v == null ? "s/d" : String(v).slice(0,10);
+  $("ficha-cuerpo").innerHTML = `
+    <div class="cod">${cab.canonical_code}</div>
+    <div class="sub" style="margin-bottom:8px">${cab.matriz} · ${Number(cab.lat).toFixed(4)}, ${Number(cab.lon).toFixed(4)} · ${Math.round(Number(cab.elevation_m || 0))} m</div>
+    <div class="sub"><b>${fmt(Number(tot.n))}</b> resultados · <b>${fmt(Number(tot.num))}</b> con valor · <b>${fmt(Number(tot.cen))}</b> bajo el límite</div>
+    <div class="sub">muestreo: ${f(tot.desde)} a ${f(tot.hasta)}</div>
+    <table><thead><tr><th>Parámetro</th><th class="num">n</th><th class="num">prom.</th></tr></thead><tbody>
+    ${params.map(r => `<tr><td>${r.nom}</td><td class="num">${fmt(Number(r.n))}</td>
+      <td class="num">${r.prom == null ? "s/d" : Number(r.prom)}${r.u ? " " + r.u : ""}</td></tr>`).join("")}
+    </tbody></table>`;
+}
+
+async function pintar(){
+  const mat = $("f-mat").value;
+  const par = $("f-par").value;
+  const cal = $("f-cal").value;
+  if (!par) return;
+
+  let filtroCal = "";
+  if (cal === "VALID") filtroCal = "AND o.quality_status = 'VALID'";
+  if (cal === "PENDING_REVIEW") filtroCal = "AND o.quality_status = 'PENDING_REVIEW'";
+  if (cal === "CENS") filtroCal = "AND o.qualifier IN ('LESS_THAN','NOT_DETECTED','GREATER_THAN')";
+
+  const esc = v => String(v).replace(/'/g, "''");
+  const filas = (await conn.query(`
+    SELECT st.station_id, st.canonical_code codigo, st.lon, st.lat, st.matriz,
+           count(o.result_id) n_tot,
+           count(CASE WHEN o.numeric_value IS NOT NULL THEN 1 END) n_num,
+           count(CASE WHEN o.qualifier IN ('LESS_THAN','NOT_DETECTED','GREATER_THAN') THEN 1 END) n_cen,
+           avg(o.numeric_value) prom,
+           max(o.sampling_date) ultima
+    FROM read_parquet('stations.parquet') st
+    LEFT JOIN obs o ON o.station_id = st.station_id
+      AND o.parameter_code = '${esc(par)}'
+      AND o.quality_status IS NOT NULL ${filtroCal}
+    ${mat ? `WHERE st.matriz = '${esc(mat)}'` : ""}
+    GROUP BY 1,2,3,4,5
+  `)).toArray();
+
+  const geo = {
+    type: "FeatureCollection",
+    features: filas.filter(f => f.lon != null && f.lat != null).map(f => ({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [Number(f.lon), Number(f.lat)] },
+      properties: {
+        station_id: f.station_id, codigo: f.codigo, matriz: f.matriz,
+        n_num: Number(f.n_num), n_cen: Number(f.n_cen), n_tot: Number(f.n_tot),
+        prom: f.prom == null ? null : Number(f.prom),
+        ultima: f.ultima ? String(f.ultima).slice(0,10) : null
+      }
+    }))
+  };
+
+  if (!datosCapa){
+    mapa.addSource("est", { type: "geojson", data: geo });
+    mapa.addLayer({ id:"est-halo", type:"circle", source:"est", paint:{
+      "circle-radius":["interpolate",["linear"],["zoom"],8,4,14,13],
+      "circle-color":["case",[">",["get","n_tot"],0],"#B45638","#8B96A0"],
+      "circle-opacity":0.18 }});
+    mapa.addLayer({ id:"est-pt", type:"circle", source:"est", paint:{
+      "circle-radius":["interpolate",["linear"],["zoom"],8,2.5,14,7],
+      "circle-color":["case",
+        [">",["get","n_num"],0],"#B45638",
+        [">",["get","n_tot"],0],"#C9BFAE","#8B96A0"],
+      "circle-stroke-width":1.2,"circle-stroke-color":"#F7F7F1" }});
+    mapa.on("click","est-pt", e => fichaEstacion(e.features[0].properties.station_id));
+    mapa.on("mouseenter","est-pt",()=>document.body.style.cursor="pointer");
+    mapa.on("mouseleave","est-pt",()=>document.body.style.cursor="");
+    datosCapa = true;
+    if (geo.features.length){
+      const lons = geo.features.map(f=>f.geometry.coordinates[0]);
+      const lats = geo.features.map(f=>f.geometry.coordinates[1]);
+      mapa.fitBounds([[Math.min(...lons),Math.min(...lats)],[Math.max(...lons),Math.max(...lats)]],
+                     {padding:{top:40,bottom:40,left:40,right:60}, maxZoom:12.5, duration:0});
+    }
+  } else {
+    mapa.getSource("est").setData(geo);
+  }
+
+  const conDato = filas.filter(f => Number(f.n_num) > 0);
+  const soloCen = filas.filter(f => Number(f.n_num) === 0 && Number(f.n_tot) > 0);
+  const prom = conDato.length ? conDato.reduce((a,f)=>a+Number(f.prom),0)/conDato.length : null;
+  $("leyenda-detalle").textContent =
+    `${filas.length} estaciones · ${conDato.length} con valor · ${soloCen.length} solo bajo el límite` +
+    (prom != null ? ` · promedio ${prom.toFixed(3)}` : "");
+
+  const tot = filas.reduce((a,f)=>a+Number(f.n_tot),0);
+  const num = filas.reduce((a,f)=>a+Number(f.n_num),0);
+  const cen = filas.reduce((a,f)=>a+Number(f.n_cen),0);
+  $("resumen").innerHTML =
+    `<b>${fmt(tot)}</b> resultados de <b>${$("f-par").selectedOptions[0]?.textContent.split(" (")[0]}</b> · ` +
+    `<b>${fmt(num)}</b> numéricos · <b>${fmt(cen)}</b> bajo el límite` +
+    (tot ? ` (${(100*cen/tot).toFixed(1)} %)` : "");
+
+  const t = $("tabla-res");
+  t.querySelector("thead").innerHTML = "<tr><th>Estación</th><th>Matriz</th><th class='num'>Valor</th><th class='num'>Bajo límite</th><th>Último</th></tr>";
+  const top = filas.slice().sort((a,b)=>Number(b.prom ?? -1)-Number(a.prom ?? -1)).slice(0,10);
+  t.querySelector("tbody").innerHTML = top.map(f =>
+    `<tr><td>${f.codigo}</td><td>${f.matriz}</td>
+     <td class="num">${f.prom==null?"s/d":Number(f.prom).toFixed(3)}</td>
+     <td class="num">${fmt(Number(f.n_cen))}</td>
+     <td>${f.ultima?String(f.ultima).slice(0,10):"s/d"}</td></tr>`).join("") ||
+    "<tr><td colspan='5' class='sub'>Sin datos con ese filtro.</td></tr>";
+
+  const cens = (await conn.query(`
+    SELECT p.parameter_name nom, count(*) n,
+           count(CASE WHEN r.qualifier IN ('LESS_THAN','NOT_DETECTED','GREATER_THAN') THEN 1 END) c
+    FROM read_parquet('results.parquet') r
+    JOIN read_parquet('parameters.parquet') p USING (parameter_code)
+    GROUP BY 1 HAVING n >= 100
+    ORDER BY c * 1.0 / n DESC LIMIT 8
+  `)).toArray();
+  $("censura").innerHTML = cens.map(f => {
+    const pc = 100 * Number(f.c) / Number(f.n);
+    return `<div class="barra"><span class="nom">${f.nom}</span>
+      <span class="pista"><span class="relleno" style="width:${pc.toFixed(1)}%"></span></span>
+      <span class="pc">${pc.toFixed(0)} %</span></div>`;
+  }).join("") + `<div class="sub" style="margin-top:8px">Un tercio de los resultados está bajo el límite. Se conserva el signo y el límite: no se estima un valor.</div>`;
+}
+
+$("f-mat").addEventListener("change", async e => {
+  await llenarParametros(e.target.value);
+  await pintar();
+});
+$("f-par").addEventListener("change", pintar);
+$("f-cal").addEventListener("change", pintar);
+$("btn-reset").addEventListener("click", async () => {
+  $("f-mat").value = ""; $("f-cal").value = "";
+  await llenarParametros("");
+  const mejor = (await conn.query(`
+    SELECT parameter_code FROM read_parquet('results.parquet')
+    WHERE numeric_value IS NOT NULL GROUP BY 1 ORDER BY count(*) DESC LIMIT 1
+  `)).toArray()[0];
+  if (mejor) { $("f-par").value = mejor.parameter_code; }
+  await pintar();
+  aviso("");
+});
+
+mapa = new maplibregl.Map({
+  container: "map",
+  style: { version: 8, sources: {
+      osm: { type:"raster", tiles:["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+             tileSize:256, attribution:"© OpenStreetMap" } },
+    layers: [{ id:"osm", type:"raster", source:"osm", paint:{"raster-saturation":-0.35,"raster-opacity":0.85} }] },
+  center: [-71.36, -14.87], zoom: 11
+});
+mapa.addControl(new maplibregl.NavigationControl({showCompass:false}), "top-right");
+
+cargar().catch(e => {
+  console.error(e);
+  aviso("No se pudo cargar el catálogo: " + e.message);
+});
+</script>
+</body>
+</html>
