@@ -1,0 +1,117 @@
+{
+  "dataset": "oefa-antapaccay",
+  "version": "2022.1",
+  "created": "2026-11-07T23:58:17Z",
+  "counts": {
+    "analyses": 518,
+    "campaigns": 8,
+    "corrections": 1,
+    "parameters": 166,
+    "quality_issues": 37,
+    "results": 19152,
+    "samples": 518,
+    "sampling_events": 518,
+    "source_files": 2,
+    "source_records": 670,
+    "station_aliases": 507,
+    "stations": 504
+  },
+  "archivos": {
+    "tablas/analyses.parquet": {
+      "sha256": "6827b090153f1ab21fd49c3f25b6a9f779ef25da58c1e181413f5820d509275b",
+      "bytes": 19354,
+      "tabla": "analyses"
+    },
+    "tablas/campaigns.parquet": {
+      "sha256": "63bfb838a00ef894265c9f092c3357d6bb3a108f9da8f61e4a5e9d81ca5383c8",
+      "bytes": 5224,
+      "tabla": "campaigns"
+    },
+    "tablas/corrections.parquet": {
+      "sha256": "170c6bb1d5a438e137473c049afebeaf57aa103208d9fb1c2df844c29449dc15",
+      "bytes": 6682,
+      "tabla": "corrections"
+    },
+    "tablas/parameters.parquet": {
+      "sha256": "c55864b3775fb3a281a1843b511cb8a65404a0f6a7f410cb7f257839510ed53e",
+      "bytes": 8025,
+      "tabla": "parameters"
+    },
+    "tablas/quality_issues.parquet": {
+      "sha256": "9b317cf9cb118559c8702deeae472f80e76bb906d4cb92a4e90ed6c7e4230dd3",
+      "bytes": 7244,
+      "tabla": "quality_issues"
+    },
+    "tablas/results.parquet": {
+      "sha256": "5eeee59e565a8f4f2a919998f86e0e49a63e8456782f4bead55afb113a6fd0a4",
+      "bytes": 524873,
+      "tabla": "results"
+    },
+    "tablas/samples.parquet": {
+      "sha256": "90d54549bcace070df3889b860b66840d4c61b6a0488f1ce689e002f5997ba69",
+      "bytes": 19194,
+      "tabla": "samples"
+    },
+    "tablas/sampling_events.parquet": {
+      "sha256": "0833aca8e7b72443a2777b1cf42159109998c01faeb03e0e5b97d7d80545400f",
+      "bytes": 25002,
+      "tabla": "sampling_events"
+    },
+    "tablas/source_files.parquet": {
+      "sha256": "cdc468dc5b957b7d581d115dd2a7d4f0861be9af6af51027614f84e342c18b41",
+      "bytes": 4140,
+      "tabla": "source_files"
+    },
+    "tablas/source_records.parquet": {
+      "sha256": "b6156b62c528219cb6164bc776f310a022ccfd77f7fffd1b84d847c8c08c0ae0",
+      "bytes": 15058,
+      "tabla": "source_records"
+    },
+    "tablas/station_aliases.parquet": {
+      "sha256": "8bd67672f64d92971e7f77dbbec133ae4a83df7e5c2a15612755fb5aacad06bf",
+      "bytes": 26003,
+      "tabla": "station_aliases"
+    },
+    "tablas/stations.parquet": {
+      "sha256": "6cb0231961a907948ef6f71e4511b147f981e88c8890d5115378c3b455fdc4c3",
+      "bytes": 38208,
+      "tabla": "stations"
+    },
+    "docs/stations.geojson": {
+      "sha256": "52a67a21e7de78e048070e210153caffbf471d35ffb815b5b5f5cf8e1ef75dbe",
+      "bytes": 105671,
+      "tabla": "stations"
+    },
+    "archivos.parquet": {
+      "sha256": "2d24256a49ea9ac9cdd1fa4d4ba525493cad50c129d7ac27fcb726dcb005f564",
+      "bytes": 43399,
+      "tabla": "archivos"
+    },
+    "documentos.parquet": {
+      "sha256": "cfdf9a446068dbc6cb07fa4fd0076639b93dedabc3520214903fff27c191db92",
+      "bytes": 24344,
+      "tabla": "documentos"
+    },
+    "imagenes.parquet": {
+      "sha256": "9a988611a03fc61e4e9e3a31e39d479e30faccdc629185d3b4c43241dde68b68",
+      "bytes": 107944,
+      "tabla": "imagenes"
+    },
+    "revision/cola.csv": {
+      "sha256": "acc4a41eb9446717d413cfc0cffe2f5510c1eb33f937e4001244a0843a093a2b",
+      "bytes": 10205,
+      "tabla": "cola_revision"
+    },
+    "LEEME.md": {
+      "sha256": "bda1a2424b7bef90d32e0e5497d4d316b21588c1a9a74415bf31c56f628fdb94",
+      "bytes": 3463,
+      "tabla": "leeme"
+    }
+  },
+  "entorno": {
+    "python": "3.13.15",
+    "pandas": "3.0.5",
+    "herramienta": "kipu360-pipeline"
+  },
+  "reconstruir": "bash reconstruir.sh"
+}

@@ -1,0 +1,564 @@
+{
+  "fuentes": [
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 4.- Ficha de estimacion del caudal/Planilla de caudal_UM_Antapaccay_ARD.xlsx",
+      "bytes": 183799,
+      "sha256": "ac44dc3770d17052a007b425aab6ed843daef0964878fb250faaeff21fba7901"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 4.- Ficha de estimacion del caudal/Planilla de caudal_UM_Antapaccay_ARI.xlsx",
+      "bytes": 185200,
+      "sha256": "8e671647ab33def117bfaeedcf104850fe389be28a8eb3de4ce014d0644a530b"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 4.- Ficha de estimacion del caudal/Planilla de caudal_UM_Antapaccay_AS.xlsx",
+      "bytes": 398987,
+      "sha256": "5f6b9d49567dd6c5c2227ff7167a61b4cd64c9622265d812b07613a7e830c1ed"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 4.- Ficha de estimacion del caudal/Planilla de caudal_UM_Antapaccay_EFLU.xlsx",
+      "bytes": 185701,
+      "sha256": "956d1bf5e85c3b26258895fe99d35f91f5f8000de57130602a29ad610118c83c"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Informe 6 - Digitalización e integración de tablas (GIS).xlsx",
+      "bytes": 172409,
+      "sha256": "31bc973800881084f6ee9d169f2eb35c9d8a96d0c2337e3cfbe9444002b14a84"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Informe 6 - Digitalización e integración de tablas (detallado).xlsx",
+      "bytes": 123294,
+      "sha256": "71a60b393f249ba908eb116ede8b97ee36072b4f587bb9ad6e51bab6c0ba71b5"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Informe 7 - Integración y recopilación de tablas (SIG).xlsx",
+      "bytes": 167555,
+      "sha256": "dc07366901370ca4aa6516e061cc31145d3c8e9d61aa42acd78c417f62605178"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Informe 7 - Integración y recopilación de tablas (detallado).xlsx",
+      "bytes": 140822,
+      "sha256": "435b17911c8bcbedf143345f89cc9fec8b23e20c51b8c42ef67f21f7412f9b04"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/10_Componente mieneros_2.pdf",
+      "bytes": 1235310,
+      "sha256": "78f3019076b12c6ef28af875098704fbdd9b485aed0b638574e651048c6dee76"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/11_Muestreo_Agua_Residual_Industrial_2.pdf",
+      "bytes": 1295758,
+      "sha256": "ae96170a48c81c8aef6183a7f524c495c6272cea82e43b7f0e97bfc50967eb46"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/1_PM_Muestreo_Agua_Subterranea_1.pdf",
+      "bytes": 816775,
+      "sha256": "d948a6cea9b01ba17d4ecacc3e41fb4536e621df4f6441960a37eb49c51eac38"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/2_Muestreo_Agua_Residual_Industrial_1.pdf",
+      "bytes": 1296207,
+      "sha256": "e53d0599052620668bac02aafa4d828a9a4cac09b222e4cd3cf29ea0cb946f02"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/3_PM_Muestreo_Caracterización_Geoquímica_1.pdf",
+      "bytes": 817783,
+      "sha256": "28e226b3afa1d216eba78b3efc541032bb2acffef6cb8f219a0ef46e1ba18c33"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/4_PM_Muestreo_Componentes_Mineros_1.pdf",
+      "bytes": 840179,
+      "sha256": "6d819f85d77ce0d29254f43dc6823dbacc3ecd51fd4598cd8027bf1d7e7ad8eb"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/5_PM_Muestreo_Geologia_1.pdf",
+      "bytes": 820658,
+      "sha256": "f7dc7ab65ea75e18b8df992d811b4a3caba05baaaaf88781022187ef63e1cd81"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/6_Agua superficial de humedales_2.pdf",
+      "bytes": 3813113,
+      "sha256": "95efbef753201386937faee4d9551dc25047f44a7ed8c24c4fa0717b38aef080"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/7_Agua subetrranea_2.pdf",
+      "bytes": 1229643,
+      "sha256": "6313f1cd29b719c3a5cf30e923d8b4f5c0c4451d3ce854193b3a71246ebd6dc6"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/8_Roca_2.pdf",
+      "bytes": 1371651,
+      "sha256": "2f10c7c7955d79c6ebde17521f6cbbf4dd96108582f701f196d1543d11b82e4e"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 2_Mapas de puntos de muestreo/9_Caracterizacion geologica_2.pdf",
+      "bytes": 1232759,
+      "sha256": "b3a3c01df03d14a1a4916764cf66729525df5b202173546ca217b17edc2ab037"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-050-2022-ITEGI.pdf",
+      "bytes": 17899572,
+      "sha256": "a9221c476259334174cfd682416770bbc6b184eaa638551de3676753df04adf2"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 1.- Mapas de puntos de muestreo/PM_Muestreo_Agua_Residual_Efluentes.pdf",
+      "bytes": 822368,
+      "sha256": "b6085bb7720eba9685aae5f7fe358b60c0a7c6e03b78dc7b477d1e0f6257855e"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 1.- Mapas de puntos de muestreo/PM_Muestreo_Agua_Sedimento_Hidrobiologia.pdf",
+      "bytes": 1024801,
+      "sha256": "bfa8c23d8c36e984aba132dbab64c43f1468cd9b13b1b3be93ae0d8ca6f7fc99"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 1.- Mapas de puntos de muestreo/PM_Muestreo_Agua_Subterranea.pdf",
+      "bytes": 816775,
+      "sha256": "d948a6cea9b01ba17d4ecacc3e41fb4536e621df4f6441960a37eb49c51eac38"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 1.- Mapas de puntos de muestreo/PM_Muestreo_Caracterización_Geoquímica.pdf",
+      "bytes": 817783,
+      "sha256": "28e226b3afa1d216eba78b3efc541032bb2acffef6cb8f219a0ef46e1ba18c33"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 1.- Mapas de puntos de muestreo/PM_Muestreo_Componentes_Mineros.pdf",
+      "bytes": 840179,
+      "sha256": "6d819f85d77ce0d29254f43dc6823dbacc3ecd51fd4598cd8027bf1d7e7ad8eb"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 1.- Mapas de puntos de muestreo/PM_Muestreo_Geologia.pdf",
+      "bytes": 820658,
+      "sha256": "f7dc7ab65ea75e18b8df992d811b4a3caba05baaaaf88781022187ef63e1cd81"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/1. Agua superficial/D-3_Datos de campo-AGUA (secos)[R].pdf",
+      "bytes": 364881,
+      "sha256": "dcd5854a4972319cb41f192d3f44a09b4818755e18fc94212a01e9bb4b00837b"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/1. Agua superficial/D-3_Datos de campo-ASBM[R].pdf",
+      "bytes": 307402,
+      "sha256": "d2a560d2574c573719c894d9d7db094bca0fcb44d495d32959e56bbe13065b45"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/1. Agua superficial/D-3_Datos de campo-ASR[R].pdf",
+      "bytes": 1123017,
+      "sha256": "58342c3485c2351b909b909ff1e0e2b9201c7ebf9427d089d29c54c3607c4307"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/10. Componentes mineros/Datos de muestra de componente.[R][R][R][R][R][R][R].pdf",
+      "bytes": 345891,
+      "sha256": "4889e90c9538e6f8978bc8fbab01ef7be18264c9b75f6ff080af5ed4494a65c5"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/11. Caracterizacion geologica/Control Geologico[R][R][R][R][R][R][R][R][R][R][R][R].pdf",
+      "bytes": 3413504,
+      "sha256": "3e05907af3ef985ff6dc8422fcf902403cbc53428ca92d15f6d9d324b0d2f195"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/2. Efluentes/D-3_Datos de campo- EFLU[R].pdf",
+      "bytes": 104320,
+      "sha256": "dcf7b4f92b63b5f16995e63ace9d1c683c089a1ae4654568c58dffda1d884763"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/3. Agua residual industrial/D-3_Datos de campo de agua_ARI.pdf",
+      "bytes": 223666,
+      "sha256": "424888a5720aac4608aac4c3d9b6751d149d2bbe2761cbc387420ecfbc70421c"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/3. Agua residual industrial/D-3_Datos de campo-ARI[R].pdf",
+      "bytes": 132779,
+      "sha256": "1bf7243aa30b477ca36402b26f30bb6c9056d1b184cc9d3e878c0754deb8d44f"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/4. Agua residual domestica/D-3_Datos de campo-ARD[R].pdf",
+      "bytes": 103765,
+      "sha256": "7294ab0fc24535c3011a1ca4e447417418ecb3197146a768c07789eae780bdab"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/5. Hidrobiologia/UF Antapaccay_Datos de campo de hidrobiología.pdf",
+      "bytes": 15585825,
+      "sha256": "7647acea324d3cb7b97916f69c7afa9f0d573a30ec0e27a1204b47cafea454c8"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/6. Agua subterranea/FICHAS-ASUB-EAC ANTAPACAY.pdf",
+      "bytes": 549834,
+      "sha256": "dced2a2b58a6b41b17dd8addb20c1e09b2ca2978dc85212319035df7b31c52d2"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/7. Sedimento/FICHAS-SED-EAC ANTAPACAY.pdf",
+      "bytes": 2086727,
+      "sha256": "6dbfa6c95a00a49b4f8f438001f58bff3bb9643e6a79615f820b96120ea6587c"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/8. Suelo/D-9_Ficha de campo de suelo.pdf",
+      "bytes": 41664897,
+      "sha256": "7bc364f67d4e1b68d37c9b030f2a90ffbca80bfec56a1e4e1cc8c85a9deb6dcf"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/8. Suelo/D-9_Ficha de campo de suelo_2.pdf",
+      "bytes": 15469694,
+      "sha256": "75cb4e9a22d423f5bb6b946601e5ea2bf9ffc0e82325b5e6d0e1aeee58c4cc16"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 3.- Fichas de campo/9. Roca/Datos de muestra de roca.[R][R][R][R].pdf",
+      "bytes": 250657,
+      "sha256": "90f54e37758ec74b29995e543628682a71a7e916cdafa606db6752143151fa6c"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/1_Agua superficial/1. Agua/33. 464-2022 (19-04-22).pdf",
+      "bytes": 1686079,
+      "sha256": "f2c0a70991d8347e55e0880ef30b29036c596b190104ae368047d0c3225383b4"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/3_Comunidades hidrobiológicas/Macroinvertebrados bentónicos.pdf",
+      "bytes": 3768059,
+      "sha256": "e5147c2c33ba1cca410cec56e717736adb84e8faa459c65554e8c65fec048c62"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/3_Comunidades hidrobiológicas/Metales en tejidos de peces.pdf",
+      "bytes": 2540364,
+      "sha256": "ea6d9794538aa073bd7c6bc03b2c5aab83a9b323166c1005c8a1eb41ac752aec"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/3_Comunidades hidrobiológicas/Peces.pdf",
+      "bytes": 983727,
+      "sha256": "47415fa1c03bacd70bc4e964a87604622c0bc3845110a0edb17ec605d3d7b9e2"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/3_Comunidades hidrobiológicas/Perifiton.pdf",
+      "bytes": 4482506,
+      "sha256": "ec43b26d7911057171d0ef551c82f3a87ece697ede7535d6320a1e9762eb5806"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/6_Suelo/CADENAS/TDR 472_240522.pdf",
+      "bytes": 5169347,
+      "sha256": "9e7272b339c9b9def0253606da6494576b031baf8c49f9d9b441db84f97597e4"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/6_Suelo/CADENAS/cadenas_RS 469-2022-E01-047483.pdf",
+      "bytes": 20198956,
+      "sha256": "1075e0092e7c16dad3e1cdd110a4dc0ad59b21aadd63dc25b0da272823a6f467"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/7_Roca y Componente minero/13-05-2022/DRX RS  466.pdf",
+      "bytes": 169813,
+      "sha256": "7e71d778a6440d9addc2af50b7b7a3b1cf7b7dfefa2ea16be2c644ab44cb427d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/7_Roca y Componente minero/13-05-2022/DRX RS  467.pdf",
+      "bytes": 184566,
+      "sha256": "236b27fb1991b1d906e26acd813c59a2a7c4dcc6e2eb5a77f23e77c680e34b68"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/7_Roca y Componente minero/13-05-2022/DRX RS  468.pdf",
+      "bytes": 160098,
+      "sha256": "211610eca8eeeea943297054303764c1b4aab431b7b3b54c9af6629cd04966ac"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/7_Roca y Componente minero/13-05-2022/MEB RS 467.pdf",
+      "bytes": 184783,
+      "sha256": "2e5969916872e7f9144bc51f5a31985c3ba89ffd30a32c9b5996e6a2ee1f6681"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 5.- Cadenas de custodia/7_Roca y Componente minero/13-05-2022/MEB RS 468.pdf",
+      "bytes": 146278,
+      "sha256": "89e24da2f9b1cfa76702e691885b58ccbad0861517ab363682ccf5f8646c8499"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/1. 710068/71-0068.pdf",
+      "bytes": 1007697,
+      "sha256": "a5a3a16e8196e5a14c8d9542b8b7965382412fb8d11a6537fe23219670264d4d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/1. 710068/ORP-71-0068.pdf",
+      "bytes": 287398,
+      "sha256": "c3f6acac33757fc105120d47e14c82e455b3d586e7faaac6d680965942a5d803"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/2. 710073/CERTIFICADO 71-0073.pdf",
+      "bytes": 992589,
+      "sha256": "48ae70f22ffdd3c1e329400cb287f5898c6c8f01993fa58caef2441352fb1cbb"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/3. 710034/71-0034.pdf",
+      "bytes": 1529911,
+      "sha256": "71719bc4cb777c3d170097ab1c6802ba5b5d50b85866744806c4bd02e2839dc0"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/3. 710034/ORP-71-0034.pdf",
+      "bytes": 294267,
+      "sha256": "e1626388763e9acdac22754e3a869a8079ea576e76f12eb37b06988aabdb2817"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/1222349_A1117.pdf",
+      "bytes": 86549,
+      "sha256": "1bcd3c720f63eb2775a6509ab63479378ff34e2da4f97788dc3c8774b25df920"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/1440049_a1039 (1) (1).pdf",
+      "bytes": 85969,
+      "sha256": "07906cd13d64818c7644f92de37ba0fd00c760f6baa9993f5b313fd6a13647b8"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/2283449_A0209.pdf",
+      "bytes": 87207,
+      "sha256": "03ef96f9d49a3a195d9a1432ad7cecd2041c32dc9e7bd85a96609888bb6e645d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/CD_1413_LOTE A1104.pdf",
+      "bytes": 86475,
+      "sha256": "ab03f09adb246011b4e0f6e3a7eb83e07833bf3c669ff8230e13c985ea4efdf5"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/REDOX A9143.pdf",
+      "bytes": 153394,
+      "sha256": "9c3a27cf249ead3886544e38f92b453235e82538d9e0198c35d08588442c8149"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/pH_10.01_LOTE A0063.pdf",
+      "bytes": 86277,
+      "sha256": "96fbb803cb26a6525fa03be8be6fca5f0eeaf6bf9d73849a5256dd9a9b706d72"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/pH_10.01_LOTE A1006.pdf",
+      "bytes": 86056,
+      "sha256": "9aa97a6b89b1f10e0b018b8023524ed44a4fa6a0dd3800bbfff217968cb1547a"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/pH_7.00_LOTE A1123.pdf",
+      "bytes": 86700,
+      "sha256": "44c6920ed8c130ea1a4e9df3cd799eab3e22b3fe0d7be6545a1016bf760fa9b0"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/1_Multiparametros/4. BUFFER/pH_7.00_LOTE A1124.pdf",
+      "bytes": 87596,
+      "sha256": "f71dc5aa42c3cc60e1b8f6e2e210748cb2d7f7930483a8abc6b97835acb5ba35"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/2_Tubidimetro/TB-01.pdf",
+      "bytes": 272105,
+      "sha256": "3802900f5da43c733e53b4711f05fbb69f93538e443d590ff491eab7f903fd61"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 6.- Certificado de calibracion de equipos de campo/3_Correntometro/26-080 correntometro.pdf",
+      "bytes": 100210,
+      "sha256": "8a996d05bc56f48764fa23e361b8c9fd24589e47db83ddd6bb61e445d884f066"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 7.- Ficha de verificacion y ajuste de equipos/1. Multi 710068[R].pdf",
+      "bytes": 907816,
+      "sha256": "3a10d2e2b5d96c38ce553266bc57101ae18ced5162dfebfdbeb411eb1efa3b6b"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 7.- Ficha de verificacion y ajuste de equipos/2. Multi 710073[R].pdf",
+      "bytes": 286210,
+      "sha256": "c0e2c1f519114bd4cec608f85ddfce68c95c9c2c958c34646bec82af9d04b995"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 7.- Ficha de verificacion y ajuste de equipos/3. Multi 710034[R].pdf",
+      "bytes": 701640,
+      "sha256": "865aebafb9192b587c758fcd7fc5afa30d9fae60ae8a720a3df0d13d94f96412"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/ACTA 1ra etapa Alto Huarca.pdf",
+      "bytes": 393766,
+      "sha256": "82f436aaad04f467464560d6ab92695aeac9cc5d619c20f02a923250372290d4"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/ACTA 1ra etapa Cala Cala.pdf",
+      "bytes": 289975,
+      "sha256": "1e65c428742962c6f2fbea7c75156291feb14fa8d2da9cbaf6092ef463f073b5"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/ACTA 1ra etapa EAC Huisa Collana.pdf",
+      "bytes": 374385,
+      "sha256": "90bdcaceaaa86e37fdb6f60bae378df970433f0930835049843642e2e968ce4c"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/ACTA 1ra etapa EAC Tintaya Marquiri.pdf",
+      "bytes": 361090,
+      "sha256": "0e3930d68ab22e7e40dd8ffdd864190368e7a3427fa4443099234d8675e3fe93"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/ACTA de no autorizacion de Alto Huancane para la EAC.pdf",
+      "bytes": 349560,
+      "sha256": "996676194aceb9f956f146b54a96402b03926e15d1dec42d3381703550d47453"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/Cargo de cartas entregada al presidente de Huini Ccoroccohuayco.pdf",
+      "bytes": 497739,
+      "sha256": "bf34a30472f7602b87d98aaef19e5be91240749cb03dae8d0baee4aef85ab4c7"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/Cargo de cartas entregada al presidente de Paccopata EAT.pdf",
+      "bytes": 496705,
+      "sha256": "d99b1fcb94314ba60b05d983832a81b876fa1f94b4129e57928a892935e27b34"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/Anexo N 8.- Actas de participacion ciudadana/Cargo de cartas entregadas apresidentes comunales para la EAC.pdf",
+      "bytes": 793458,
+      "sha256": "3f2c12785df54ecdf263a1a8e8387064537b51ea3bfd4ccdd15f1aec3237b48d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-052-2022-STEC/RC-052-2022-STEC.pdf",
+      "bytes": 1592255,
+      "sha256": "1fd542b9874948ed4da5dddd3ddc6a21790740d1da8883fa8cd5bfe74daeb58d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-132-2022-STEC/ANEXOS 132-2022.pdf",
+      "bytes": 52984884,
+      "sha256": "e44d8d054aa6c69e772a6b12b42842f29c781aaf1ba517f8efd9dfdb1b922be9"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-132-2022-STEC/RC-132-2022-STEC.pdf",
+      "bytes": 1621955,
+      "sha256": "6ea4494fb60102958bfe465b1140579a2ff6fec95a7bab943dd260731b71d879"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-134-2022-STEC/ANEXOS RC-134-2022-STEC GEOFISICA[R][R].pdf",
+      "bytes": 10640884,
+      "sha256": "24c3753504d8fdf6af53cb2a6c51a9c69fd5347644a45a96ea038309a234b89d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-134-2022-STEC/RC-134-2022-STEC GEOFISICA[R][R][R][R].pdf",
+      "bytes": 953076,
+      "sha256": "f20432828d90af20c68b248c07990b1b7a84d77e9981aa402461de33ce232cb2"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-136-2022-STEC/ANEXOS RC-136-2022-STEC GEOFÍSICA 2DA EJEC[R][R].pdf",
+      "bytes": 26139116,
+      "sha256": "1e9a4d22727d35635864d39d38cd7c5c1456eb31373e0f886c3133d02ae4c7fc"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 3_Reporte de campo/RC-136-2022-STEC/RC-136-2022-STEC GEOFÍSICA 2DA EJEC[R][R][R][R].pdf",
+      "bytes": 1096558,
+      "sha256": "452401cade681caf4cf263ac8931a2088e8cb2342afb2f4edd2c0ed70560a433"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 4_Reporte de resultados/RR-079-2022-STEC/Anexo_C_ok.pdf",
+      "bytes": 782925014,
+      "sha256": "98a87307fe9c803a8509ba4dc2e5bd62a8ed3e4ec6ec8320814c3b0eebd1645d"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 4_Reporte de resultados/RR-079-2022-STEC/RR-079-2022-STEC_A_B[R][R] (1).pdf",
+      "bytes": 58817107,
+      "sha256": "85c5df77bc54bb6fe541a715b859d42aa327a2246b1ed4393b4b56b9ff72b38e"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 4_Reporte de resultados/RR-083-2022-STEC/ANEXO F.pdf",
+      "bytes": 301000854,
+      "sha256": "61c84259b0982f5cda15c403bb16011e1b6d8be1bc3b708f95c3b246247052dc"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 4_Reporte de resultados/RR-083-2022-STEC/RR-083-2022-STEC_[R][R][R].pdf",
+      "bytes": 2396013,
+      "sha256": "9c7d1b5926d5bef5228dba5ed005132a8623492f96afe09e132fd43170b71ba9"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 4_Reporte de resultados/RR-085-2022-STEC/RR-085-2022-STEC[R] (1)[R] (1).pdf",
+      "bytes": 47088448,
+      "sha256": "7827cd4a55c86a31da35554b002782794d0032668fc8affa33a9c1192462799e"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 5_Informes sobre el humedal/INF_N_00009-2023-OEFA-DEAM-STEC.pdf",
+      "bytes": 2963675,
+      "sha256": "f6c18616654566e03b8eb76d0a129069651e4b59c1000c83562d9e5b450d6a3c"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 5_Informes sobre el humedal/INF_N_00102-2023-OEFA-DEAM-STEC.pdf",
+      "bytes": 2938562,
+      "sha256": "3898a3c3123a345809f0d34440d39eec163549b9066ecbd3b21730eaa2c385e8"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 5_Informes sobre el humedal/INF_N_00311-2022-OEFA-DEAM-STEC.pdf",
+      "bytes": 4082200,
+      "sha256": "8796ebf177defce3f9d812293a2757b91981a1cb281f8938d97bde6eb95e1b14"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 6_Evaluacion hidrogeofisica/2022-E01-130469_cargo.pdf",
+      "bytes": 188088,
+      "sha256": "e317476399f2c7a9fb111cc4051d1fbd50a9755a60509fa125f4aee6b7e57197"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 6_Evaluacion hidrogeofisica/Estudio_Hidrogeofisico_de_la_zona_de_Antapacay_V2.pdf",
+      "bytes": 5204036,
+      "sha256": "4a9af6582fdf8cfa26a562512030c945193d144e40108ac308ca4e9a0da7b85e"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexo 7_Hundimientos/Hundimientos (1).pdf",
+      "bytes": 2093798,
+      "sha256": "46589912381e5545c0b03f72623797b734091eac773133760fb0eca5eadb8e2f"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Anexos 1_Detalle EAC humedales-agua sub-suelo.pdf",
+      "bytes": 37705168,
+      "sha256": "fd90310543999a6850414db6dc280cd8f9a716b6668c92004f249d4a68ea5e43"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/Informe_N_00144-2023-OEFA-DEAM-STEC.pdf",
+      "bytes": 918673,
+      "sha256": "ac0c7bda298501a603deacab6abc9d4565eb9f856ba14965759335b51a220698"
+    },
+    {
+      "archivo": "raw/6_INF_00144-2023-OEFA-DEAM-STEC/6_INF 00144-2023-OEFA-DEAM-STEC/unlocked_Informe_N_00144-2023-OEFA-DEAM-STEC.pdf",
+      "bytes": 707619,
+      "sha256": "83b60734a095921f9d48e72dbb4900efcb0764ba9b18f7d5836aa2e6bd99a199"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 1_Detalle EA de la flora y fauna - DR y botaderos.pdf",
+      "bytes": 44639265,
+      "sha256": "2f232d6a2173ed8f00651a523b228622b39601c2ce4b2a1b7d86df48002463b9"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 2_Reporte de campo/ANEXOS-RC-065-2022-STEC 2[R][R][R][R][R][R].pdf",
+      "bytes": 33707839,
+      "sha256": "0155a9408e53824fe9ed40f50c424423cf6fa6fac71c94d8dbcedc626026d8a8"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 2_Reporte de campo/ANEXOS-RC-131-2022-STEC [R][R][R][R][R][R][R][R][R].pdf",
+      "bytes": 82591964,
+      "sha256": "903eb934bc12003e01c9be7956c61fe99eb25ccb3a3bda30d445371d4f0c9be9"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 2_Reporte de campo/Anexo Nº 2[R][R][R].pdf",
+      "bytes": 160225,
+      "sha256": "bf1191ad124cdc47b904b7f8a4992ee5035195d8e5631f2866e037869b9e4ec0"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 2_Reporte de campo/RC-065-2022-STEC 1[R][R][R][R][R][R][R][R].pdf",
+      "bytes": 2251184,
+      "sha256": "6cdaab189ab286ff4bdc18234838215c28151d4e45b9b45794d1d34acc0fc15b"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 2_Reporte de campo/RC-131-2022-STEC [R][R][R][R][R][R][R][R][R][R][R].pdf",
+      "bytes": 1117189,
+      "sha256": "c4c91deb05a7c4a0915c950ceee4297193a9f1a3bd0fca5ec91544f7dd873b2b"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 3_Reporte de resultados/Anexo Nº 3[R][R][R].pdf",
+      "bytes": 160112,
+      "sha256": "352b35bb55e46b2c47702e91835f9bf22794b71894501f9f4281e7666cf05677"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 3_Reporte de resultados/RR-088-2022-STEC[R][R][R][R][R][R].pdf",
+      "bytes": 18378435,
+      "sha256": "fd4cda5b6f6c4b4afd113355f3a45600276aaf314e51461f7f47fe2d046b3891"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 3_Reporte de resultados/RR-088-2022-STEC_Informes de ensayo.pdf",
+      "bytes": 423728689,
+      "sha256": "546dd29163c29c96e1b5b4316cfda5d94635778dde871e05acbcaabd6cc111b6"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Anexo 4_Estadistico/Anexo Nº 4.Analisis estadisticos[R][R].pdf",
+      "bytes": 456857,
+      "sha256": "cbf0c042e20a51fe90d0c37a45e7e7d7584ac0810441934e6ffa867942b912d5"
+    },
+    {
+      "archivo": "raw/7_INF_00146-_2023-OEFADEAM-STEC/7_INF 00146- 2023-OEFADEAM-STEC/Inf 00146-2023-OEFA-DEAM-STEC.pdf",
+      "bytes": 561674,
+      "sha256": "92d12e5cd88df6cd5e326ccf2934187a2f99c9121d11390ab8b79f75e19c8624"
+    }
+  ]
+}

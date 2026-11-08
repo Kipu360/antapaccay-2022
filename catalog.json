@@ -1,0 +1,17 @@
+{
+  "type": "Catalog",
+  "stac_version": "1.0.0",
+  "id": "kipu360",
+  "title": "Catálogo Kipu360",
+  "description": "Catálogo estático de datasets ambientales.",
+  "links": [
+    {
+      "rel": "self",
+      "href": "./catalog.json"
+    },
+    {
+      "rel": "child",
+      "href": "./catalogo/collection.json"
+    }
+  ]
+}

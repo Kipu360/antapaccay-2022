@@ -1,0 +1,86 @@
+{
+  "version": "2022.1",
+  "conteos": {
+    "source_files": 2,
+    "source_records": 670,
+    "stations": 504,
+    "station_aliases": 507,
+    "campaigns": 8,
+    "sampling_events": 518,
+    "samples": 518,
+    "analyses": 518,
+    "parameters": 166,
+    "results": 19152,
+    "quality_issues": 37,
+    "corrections": 1
+  },
+  "resultados_por_estado": {
+    "VALID": 12863,
+    "PENDING_REVIEW": 6289
+  },
+  "resultados_por_qualifier": {
+    "LESS_THAN": 5834,
+    "NOT_DETECTED": 1142,
+    "GREATER_THAN": 107,
+    "TEXT": 35
+  },
+  "fks": {
+    "results.analysis_id": {
+      "filas": 19152,
+      "huerfanas": 0
+    },
+    "results.parameter_code": {
+      "filas": 19152,
+      "huerfanas": 0
+    },
+    "results.station_id": {
+      "filas": 19152,
+      "huerfanas": 0
+    },
+    "sampling_events.station_id": {
+      "filas": 518,
+      "huerfanas": 0
+    },
+    "samples.sampling_event_id": {
+      "filas": 518,
+      "huerfanas": 0
+    },
+    "analyses.sample_id": {
+      "filas": 518,
+      "huerfanas": 0
+    },
+    "station_aliases.station_id": {
+      "filas": 507,
+      "huerfanas": 0
+    }
+  },
+  "coherencia": {
+    "estacion_distinta": 0,
+    "evento_sin_estacion": 0,
+    "resultados": 19152,
+    "analisis_sin_matriz": 0
+  },
+  "muestras_repetidas": 0,
+  "eventos_con_muchos_resultados": 0,
+  "estaciones_fuera_bbox": 0,
+  "parametros_con_varias_unidades": 35,
+  "estaciones": 504,
+  "bbox": {
+    "lon": [
+      -71.487574,
+      -71.239014
+    ],
+    "lat": [
+      -14.997251,
+      -14.739373
+    ]
+  },
+  "validacion_estructural": true,
+  "pendientes": 6289,
+  "publicable": false,
+  "motivos_no_publicable": [
+    "Licencia del expediente sin definir",
+    "Posibles datos personales en los PDF (nombres y firmas)",
+    "6289 resultados en PENDING_REVIEW por falta de fecha en la hoja"
+  ]
+}

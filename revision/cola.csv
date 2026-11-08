@@ -1,0 +1,66 @@
+id,tipo,entidad,motivo,accion,cantidad,prioridad,responsable
+R001,dato_sin_fecha,A. TEJIDO VEGETAL,sin fecha en la hoja,Pedir la fecha al cliente o excluir la hoja de series temporales,3774,alta,cliente
+R002,dato_sin_fecha,A. TEJIDO VEGETAL,sin fecha en la hoja,Pedir la fecha al cliente o excluir la hoja de series temporales,1142,alta,cliente
+R003,dato_sin_fecha,C.6. Comp_mineros_minerologia,sin fecha en la hoja,Pedir la fecha al cliente o excluir la hoja de series temporales,673,alta,cliente
+R004,dato_sin_fecha,A. TEJIDO VEGETAL,sin fecha en la hoja,Pedir la fecha al cliente o excluir la hoja de series temporales,665,alta,cliente
+R005,parametro_multunidad,aluminio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R006,parametro_multunidad,antimonio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R007,parametro_multunidad,arsenico,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R008,parametro_multunidad,bario,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R009,parametro_multunidad,berilio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R010,parametro_multunidad,boro,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R011,parametro_multunidad,cadmio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R012,parametro_multunidad,cobalto,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R013,parametro_multunidad,cobre,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R014,parametro_multunidad,cromo,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R015,parametro_multunidad,estano,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R016,parametro_multunidad,estroncio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R017,parametro_multunidad,hierro,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R018,parametro_multunidad,litio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R019,parametro_multunidad,manganeso,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R020,parametro_multunidad,mercurio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R021,parametro_multunidad,molibdeno,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R022,parametro_multunidad,niquel,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R023,parametro_multunidad,plata,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R024,parametro_multunidad,plomo,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R025,parametro_multunidad,selenio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R026,parametro_multunidad,titanio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R027,parametro_multunidad,zinc,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,533,alta,nosotros
+R028,parametro_multunidad,magnesio,unidades en el expediente: % | mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,494,alta,nosotros
+R029,parametro_multunidad,calcio,unidades en el expediente: % | mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,411,alta,nosotros
+R030,parametro_multunidad,potasio,unidades en el expediente: % | mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,411,alta,nosotros
+R031,parametro_multunidad,vanadio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,345,alta,nosotros
+R032,parametro_multunidad,fosforo,unidades en el expediente: % | mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,335,alta,nosotros
+R033,parametro_multunidad,sodio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,262,alta,nosotros
+R034,parametro_multunidad,talio,unidades en el expediente: mg/L | mg/kg | mg/kg PS,Definir unidad canónica y regla de conversión por matriz,262,alta,nosotros
+R035,parametro_multunidad,cloruro,unidades en el expediente: % | mg/L | mg/kg,Definir unidad canónica y regla de conversión por matriz,245,alta,nosotros
+R036,parametro_multunidad,sulfato,unidades en el expediente: % | mg/L | mg/kg,Definir unidad canónica y regla de conversión por matriz,245,alta,nosotros
+R037,parametro_multunidad,bismuto,unidades en el expediente: mg/L | mg/kg,Definir unidad canónica y regla de conversión por matriz,158,alta,nosotros
+R038,parametro_multunidad,uranio,unidades en el expediente: mg/L | mg/kg,Definir unidad canónica y regla de conversión por matriz,158,alta,nosotros
+R039,parametro_multunidad,fosfato,unidades en el expediente: % | mg/L,Definir unidad canónica y regla de conversión por matriz,112,alta,nosotros
+R040,derivado_no_usado,libros GIS y planillas,contienen fórmulas que reemplazan la censura por el punto medio,Nunca usar como fuente. Solo contraste,6,alta,nosotros
+R041,correccion_aplicada,A. TEJIDO VEGETAL,epsg: Zona 18 L → EPSG:32719,Confirmar con el cliente que la hoja declara mal la zona,1,alta,cliente
+R042,incidencia_calidad,severidad ERROR,ZONE_MISMATCH,Revisar cada fila de quality_issues,1,alta,nosotros
+R043,archivo_pendiente,pendiente_ocr,91 archivos en ese estado,OCR de cadenas de custodia,91,media,nosotros
+R044,archivo_pendiente,pendiente_parser,53 archivos en ese estado,Pedir exportación ASCII al cliente,53,media,nosotros
+R045,ocr_baja_confianza,ANEXOS 132-2022.pdf,40 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,40,media,nosotros
+R046,incidencia_calidad,severidad WARNING,"MISSING_DATE, MULTIPLE_UNITS",Revisar cada fila de quality_issues,36,media,nosotros
+R047,ocr_baja_confianza,ANEXOS-RC-065-2022-STEC 2[R][R][R][R][R][R].pdf,12 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,12,media,nosotros
+R048,ocr_baja_confianza,Anexo_C_ok.pdf,10 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,10,media,nosotros
+R049,archivo_pendiente,pendiente_extraccion,10 archivos en ese estado,Extraer fotos y leyendas del DOCX,10,media,nosotros
+R050,ocr_baja_confianza,TDR 472_240522.pdf,9 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,9,media,nosotros
+R051,ocr_baja_confianza,ANEXOS-RC-131-2022-STEC [R][R][R][R][R][R][R][R][R].pdf,9 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,9,media,nosotros
+R052,ocr_baja_confianza,Metales en tejidos de peces.pdf,3 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,3,media,nosotros
+R053,ocr_baja_confianza,Cargo de cartas entregada al presidente de Huini Ccoroccohuayco.pdf,2 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,2,media,nosotros
+R054,ocr_baja_confianza,Cargo de cartas entregada al presidente de Paccopata EAT.pdf,2 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,2,media,nosotros
+R055,ocr_baja_confianza,ANEXO F.pdf,2 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,2,media,nosotros
+R056,ocr_baja_confianza,26-080 correntometro.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R057,ocr_baja_confianza,ACTA 1ra etapa Alto Huarca.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R058,ocr_baja_confianza,ACTA 1ra etapa Cala Cala.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R059,ocr_baja_confianza,ACTA 1ra etapa EAC Huisa Collana.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R060,ocr_baja_confianza,ACTA 1ra etapa EAC Tintaya Marquiri.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R061,ocr_baja_confianza,ACTA de no autorizacion de Alto Huancane para la EAC.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R062,ocr_baja_confianza,Cargo de cartas entregadas apresidentes comunales para la EAC.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R063,ocr_baja_confianza,RR-088-2022-STEC_Informes de ensayo.pdf,1 páginas bajo el umbral,Leer la página y corregir el texto antes de citar,1,media,nosotros
+R064,valor_de_texto,varias hojas,"el laboratorio reportó texto, no número",Revisar si corresponde a un qualifier o a una observación,35,baja,nosotros
+R065,duplicado_exacto,8 archivos,"1_PM_Muestreo_Agua_Subterranea_1.pdf, 3_PM_Muestreo_Caracterización_Geoquímica_1.pdf, 4_PM_Muestreo_Componentes_Mineros_1.pdf",Conservar una copia y anotar la otra como duplicada,8,baja,nosotros
